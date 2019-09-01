@@ -1,0 +1,33 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_card"
+    android:orientation="vertical"
+    tools:context="fragmentos.FragmentMenuUsuario">
+
+    <GridView
+        android:id="@+id/gridPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:columnWidth="130dp"
+        android:fadeScrollbars="true"
+        android:gravity="top"
+        android:numColumns="2"
+        android:scrollbars="vertical"
+        android:textAlignment="center"
+        android:verticalScrollbarPosition="defaultPosition"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </GridView>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Empregos Bragança Paulista</string>
+    <string name="background">jobs</string>
+    <string name="button">Button</string>
+    <string name="back">back</string>
+
+    <string name="name">Name</string>
+    <string name="e_mail_hint">E-mail</string>
+    <string name="E_mail">E-mail</string>
+    <string name="avatar">picture</string>
+    <string name="e_mail">E-mail</string>
+    <string name="senha">Senha</string>
+    <string name="img_avatar_main">avatar</string>
+    <string name="title_activity_menu_activity">Menu</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="tblPerfil">Perfil</string>
+    <string name="tblEmpregos">Vagas</string>
+    <string name="tblNovidades">Novidades</string>
+    <string name="btnloginComEmail">LOGIN COM E-MAIL</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_activity_tabbed">Tabbed</string>
+    <string name="action_configurações">Configurações</string>
+    <string name="action_sair">Sair</string>
+    <string name="tab_perfil">Perfil</string>
+    <string name="tab_vagas">Vagas</string>
+    <string name="tab_outra">outra</string>
+    <string name="img_teste">teste</string>
+
+    <string name="FACEBOOK_APP_ID">328336747870560</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">[ACCOUNT_KIT_CLIENT_TOKEN]</string>
+    <string name="ak_login_protocol_scheme">ak328336747870560</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_tabbed_menu">BuscaEmpregos</string>
+    <string name="btnPerfil">Perfil</string>
+    <string name="txt_perfil">Dados Pessoais</string>
+    <string name="tab_entrevistas">Entrevistas</string>
+    <string name="btnRegistrar">REGISTRAR</string>
+    <string name="configuracoes">Configurações</string>
+    <string name="deslogar_app">Sair</string>
+    <string name="sincronizar_social">Sincronizar</string>
+    <string name="title_activity_banner">Anuncios</string>
+
+    <string name="hello_world">Hello world!</string>
+    <!-- -
+        This is an ad unit ID for a banner test ad. Replace with your own banner ad unit id.
+        For more information, see https://support.google.com/admob/answer/3052638
+    <!- -->
+    <string name="ad_mob_appid">ca-app-pub-7824436611447271~5444472299</string>
+    <string name="add_mob_app_teste">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="banner_ad_unit_id">ca-app-pub-7824436611447271/5829106360</string>
+
+    <string name="banner_teste">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="fechar_app">Fechar APP</string>
+    <string name="criar_nova_conta">CRIAR NOVA CONTA</string>
+    <string name="title_activity_menu_usuario">Menu do Usuário</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="txRecovery_description">Insira o E-mail cadastrado</string>
+
+
+</resources>

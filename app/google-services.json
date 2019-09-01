@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "872040700311",
+    "firebase_url": "https://empregos-a6523.firebaseio.com",
+    "project_id": "empregos-a6523",
+    "storage_bucket": "empregos-a6523.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:872040700311:android:613e3ff33d1aadcb",
+        "android_client_info": {
+          "package_name": "br.com.empregos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "872040700311-ujqc8k6nc2u166jcifgrjlabia7rpp66.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.empregos",
+            "certificate_hash": "4d78dfb009c053a15cefb8ce275cd4f97660045d"
+          }
+        },
+        {
+          "client_id": "872040700311-ju5gpgq2gjfskvggsprjp7s7jhq0rhjo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOJg8bK2mnNqKxaE30wQokW3StKjqdJXA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "872040700311-ju5gpgq2gjfskvggsprjp7s7jhq0rhjo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

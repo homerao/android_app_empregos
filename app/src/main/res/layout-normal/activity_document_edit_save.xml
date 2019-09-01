@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_card"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".partial.DocumentoEditSaveActivity">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/app_bar_menu_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="56dp" />
+
+
+        <TextView
+            android:id="@+id/txRGLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="150dp"
+            android:text="RG"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/edtRG"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/field_rounded_white"
+            android:elevation="@dimen/text_field_elevation"
+            android:ems="10"
+            android:hint="RG"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txCPFLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="2dp"
+            android:text="DATA EXPEDIÇÃO RG"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/edtDataExp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/field_rounded_white"
+            android:elevation="@dimen/text_field_elevation"
+            android:ems="10"
+            android:hint="DATA EXP RG"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txCartMilitarLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="2dp"
+            android:text="ORGÃO EXPEDIDOR"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/edtOrgExp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/field_rounded_white"
+            android:elevation="@dimen/text_field_elevation"
+            android:ems="10"
+            android:hint="ORGÃO EXPEDIDOR"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txTituloLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="5dp"
+            android:text="CPF"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/edtCpf"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/field_rounded_white"
+            android:elevation="@dimen/text_field_elevation"
+            android:ems="10"
+            android:hint="CPF"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txCarteiraMilitarLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="2dp"
+            android:text="TÍTULO ELEITORAL"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/edtTituloEleitoral"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/field_rounded_white"
+            android:elevation="@dimen/text_field_elevation"
+            android:ems="10"
+            android:hint="TÍTULO DE ELEITOR"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txPisLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="2dp"
+            android:text="ZONA/SEÇÃO"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/edtZonaSecao"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/field_rounded_white"
+            android:elevation="@dimen/text_field_elevation"
+            android:ems="10"
+            android:hint="ZONA/SEÇÃO"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txCPFLabel9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="CARTEIRA MILITAR"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/edtCartMilitar"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/field_rounded_white"
+            android:elevation="@dimen/text_field_elevation"
+            android:ems="10"
+            android:hint="          CARTEIRA MILITAR           "
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txCPFLabel7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="2dp"
+            android:text=" HABILITAÇÃO"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/edtHabilitacao"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/field_rounded_white"
+            android:elevation="@dimen/text_field_elevation"
+            android:ems="10"
+            android:hint="          HABILITAÇÃO          "
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txCPFLabel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="2dp"
+            android:text=" CATEGORIA CNH"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/edtCatCNH"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/field_rounded_white"
+            android:elevation="@dimen/text_field_elevation"
+            android:ems="10"
+            android:hint="CATEGORIA EX: A/B/C/D/E"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txDataValCnh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="2dp"
+            android:text="DATA VALIDADE CNH"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/edtValidadeCNH"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/field_rounded_white"
+            android:elevation="@dimen/text_field_elevation"
+            android:ems="10"
+            android:hint="DATA VALIDADE EX: DD/MM/YYYY"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txCPFLabel3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="2dp"
+            android:text=" PIS"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/edtNumeroPis"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/field_rounded_white"
+            android:elevation="@dimen/text_field_elevation"
+            android:ems="10"
+            android:hint="NUMERO DO PIS"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txCPFLabel4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="2dp"
+            android:text="CARTEIRA PROFISSIONAL"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/edtCartProfissional"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/field_rounded_white"
+            android:elevation="@dimen/text_field_elevation"
+            android:ems="10"
+            android:hint="CARTEIRA PROFISSIONAL"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txCPFLabel5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="2dp"
+            android:text=" SÉRIE"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/edtSerieCartProfi"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/field_rounded_white"
+            android:elevation="@dimen/text_field_elevation"
+            android:ems="10"
+            android:hint="SÉRIE CARTEIRA PROFISSIONAL"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btnDocSave"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/button_rounded_login_red"
+            android:elevation="@dimen/text_field_elevation"
+            android:text="SALVAR E FECHAR"
+            android:textAlignment="center"
+            android:textColor="@color/com_facebook_button_login_silver_background_color" />
+
+
+    </LinearLayout>
+</ScrollView>

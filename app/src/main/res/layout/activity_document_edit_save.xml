@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_card"
+    tools:context=".partial.DocumentoEditSaveActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/app_bar_menu_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <EditText
+        android:id="@+id/edtRG"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/field_rounded_white"
+        android:elevation="@dimen/text_field_elevation"
+        android:ems="10"
+        android:hint="          RG            "
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <EditText
+        android:id="@+id/edtDataExp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:background="@drawable/field_rounded_white"
+        android:elevation="@dimen/text_field_elevation"
+        android:ems="10"
+        android:hint="          CPF            "
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtRG" />
+
+    <EditText
+        android:id="@+id/edtOrgExp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:background="@drawable/field_rounded_white"
+        android:elevation="@dimen/text_field_elevation"
+        android:ems="10"
+        android:hint="          Reservista            "
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtDataExp" />
+
+    <EditText
+        android:id="@+id/edtCpf"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:background="@drawable/field_rounded_white"
+        android:elevation="@dimen/text_field_elevation"
+        android:ems="10"
+        android:hint="Título de Eleitor"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtOrgExp" />
+
+    <EditText
+        android:id="@+id/edtTituloEleitoral"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:background="@drawable/field_rounded_white"
+        android:elevation="@dimen/text_field_elevation"
+        android:ems="10"
+        android:hint="Carteira de Habilitação"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtCpf" />
+
+    <EditText
+        android:id="@+id/edtZonaSecao"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:background="@drawable/field_rounded_white"
+        android:elevation="@dimen/text_field_elevation"
+        android:ems="10"
+        android:hint="          PIS           "
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTituloEleitoral" />
+
+    <Button
+        android:id="@+id/btnDocSave"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_rounded_login_red"
+        android:elevation="@dimen/text_field_elevation"
+        android:text="Salvar"
+        android:textAlignment="center"
+        android:textColor="@color/com_facebook_button_login_silver_background_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtZonaSecao" />
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_rounded_login_red"
+        android:drawableStart="@drawable/ic_arrow_black_24dp"
+        android:elevation="@dimen/text_field_elevation"
+        android:text="VOLTAR"
+        android:textAlignment="center"
+        android:textColor="@color/com_facebook_button_login_silver_background_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDocSave" />
+
+
+</android.support.constraint.ConstraintLayout>

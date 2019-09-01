@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_card"
+    app:barrierDirection="left"
+    tools:context=".DadosPessoaisViewActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/app_bar_menu_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="800dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardFoto"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txIdade11">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgPerfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="2dp"
+                    android:layout_toEndOf="@+id/cardFoto"
+                    android:padding="10dp"
+                    android:src="@drawable/profile"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/lbNascimento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:text="DATA DE NASCIMENTO:"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbNome" />
+
+            <TextView
+                android:id="@+id/lbSexo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/lbNascimento"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:text="SEXO:"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbNascimento" />
+
+            <TextView
+                android:id="@+id/lbNaturalidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:text="NATURALIDADE:"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbSexo" />
+
+            <TextView
+                android:id="@+id/lbNascionalidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/lbNaturalidade"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="15dp"
+                android:text="NACIONALIDADE:"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbNaturalidade" />
+
+            <TextView
+                android:id="@+id/lbNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:text="NOME:"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+            <TextView
+                android:id="@+id/lbEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:text="E-MAIL:"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toBottomOf="@+id/txZonaView"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/lbCelular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:text="CELULAR:"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toBottomOf="@+id/txCartMilitarView"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/lbTelFixo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:text="TELEFONE FIXO:"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbCelular" />
+
+            <TextView
+                android:id="@+id/txIdade2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:text="DADOS DE CONTATO"
+                android:textColor="@color/Login_Primary_button"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+            <TextView
+                android:id="@+id/txIdade11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:text="INFORMAÇÕES PESSOAIS"
+                android:textColor="@color/Login_Primary_button"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnAddImagem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="8dp"
+                android:drawableStart="@drawable/ic_menu_camera"
+                android:elevation="@dimen/appbar_padding_top"
+                android:text="ADD"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardFoto" />
+
+            <Button
+                android:id="@+id/btnAddImagem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:drawableStart="@drawable/ic_delete_forever_black_24dp"
+                android:elevation="@dimen/appbar_padding_top"
+                android:text="DELETAR"
+                app:layout_constraintBottom_toBottomOf="@+id/btnAddImagem"
+                app:layout_constraintStart_toEndOf="@+id/btnAddImagem" />
+
+            <Button
+                android:id="@+id/btnContato"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/btnAddImagem"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="4dp"
+                android:drawableStart="@drawable/ic_edit_black_24dp"
+                android:elevation="@dimen/appbar_padding_top"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+            <Button
+                android:id="@+id/btnInfoPessoal"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/btnAddImagem"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="4dp"
+                android:drawableStart="@drawable/ic_edit_black_24dp"
+                android:elevation="@dimen/appbar_padding_top"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbNascionalidade" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnAddImagem" />
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbTelFixo" />
+
+            <EditText
+                android:id="@+id/txRGView"
+                android:layout_width="199dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/field_rounded_white"
+                android:editable="false"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Nome"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="#040404"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/lbNome"
+                app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+            <EditText
+                android:id="@+id/edtNascimentoView"
+                android:layout_width="116dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/field_rounded_white"
+                android:editable="false"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Data de Nascimento"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="#040404"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/lbNascimento"
+                app:layout_constraintTop_toBottomOf="@+id/txRGView" />
+
+            <EditText
+                android:id="@+id/txOrgExpedView"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/field_rounded_white"
+                android:editable="false"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Sexo"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="#040404"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/lbSexo"
+                app:layout_constraintTop_toBottomOf="@+id/lbNascimento" />
+
+            <EditText
+                android:id="@+id/txCpfView"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/field_rounded_white"
+                android:editable="false"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Naturalidade"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="#040404"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/lbNaturalidade"
+                app:layout_constraintTop_toBottomOf="@+id/txOrgExpedView" />
+
+            <EditText
+                android:id="@+id/txTituloEleView"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/field_rounded_white"
+                android:editable="false"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Nacionalidade"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="#040404"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/lbNascionalidade"
+                app:layout_constraintTop_toBottomOf="@+id/txCpfView" />
+
+            <EditText
+                android:id="@+id/txZonaView"
+                android:layout_width="201dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/field_rounded_white"
+                android:editable="false"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="E-MAIL"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="#040404"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/lbEmail"
+                app:layout_constraintTop_toBottomOf="@+id/txIdade2" />
+
+            <EditText
+                android:id="@+id/txCartMilitarView"
+                android:layout_width="175dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/field_rounded_white"
+                android:editable="false"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Celular"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="#040404"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/lbCelular"
+                app:layout_constraintTop_toBottomOf="@+id/txZonaView" />
+
+            <EditText
+                android:id="@+id/edtTelefoneView"
+                android:layout_width="141dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/field_rounded_white"
+                android:editable="false"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Telefone fixo"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="#040404"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/lbTelFixo"
+                app:layout_constraintTop_toBottomOf="@+id/txCartMilitarView" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

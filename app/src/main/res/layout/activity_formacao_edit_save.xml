@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_card"
+    tools:context=".partial.DadosPessoaisEditSaveActivity">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/app_bar_menu_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/button_rounded_login_red"
+        android:elevation="@dimen/text_field_elevation"
+        android:text="Salvar"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/button_rounded_login_red"
+        android:drawableStart="@drawable/ic_arrow_black_24dp"
+        android:elevation="@dimen/text_field_elevation"
+        android:text="VOLTAR"
+        android:textAlignment="center"
+        android:textColor="@color/grey_primary"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spnSexo"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/field_rounded_white"
+        android:elevation="@dimen/text_field_elevation"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/txCpfView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:listitem="@android:layout/simple_list_item_1" />
+
+    <EditText
+        android:id="@+id/edtNascto"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/field_rounded_white"
+        android:elevation="@dimen/text_field_elevation"
+        android:ems="10"
+        android:hint="Data Nascimento"
+        android:inputType="date"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/btnSalvar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtTelefoneFixo"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/field_rounded_white"
+        android:elevation="@dimen/text_field_elevation"
+        android:ems="10"
+        android:hint="Estado Civil"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/edtNascto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txTituloEleView"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/field_rounded_white"
+        android:elevation="@dimen/text_field_elevation"
+        android:ems="10"
+        android:hint="Nascionalidade"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/edtTelefoneFixo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txCpfView"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/field_rounded_white"
+        android:drawableBottom="@android:color/background_light"
+        android:elevation="@dimen/text_field_elevation"
+        android:ems="10"
+        android:hint="Naturalidade"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/txTituloEleView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txRGView"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="15dp"
+
+        android:background="@drawable/field_rounded_white"
+        android:drawableBottom="#F9F6F6"
+        android:elevation="@dimen/text_field_elevation"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/spnSexo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

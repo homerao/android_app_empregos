@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_card"
+    app:barrierDirection="left"
+    tools:context=".DadosPessoaisViewActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/app_bar_menu_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="800dp">
+
+            <TextView
+                android:id="@+id/lbRua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="RUA:"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtBairroView" />
+
+            <TextView
+                android:id="@+id/lbBairro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="BAIRRO:"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtCidadeView" />
+
+            <TextView
+                android:id="@+id/lbCidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/cardFoto"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="45dp"
+                android:text="CIDADE:"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/lbCep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="CEP:"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtReferenciaView" />
+
+            <TextView
+                android:id="@+id/lbNumero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Referência:"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtRuaView" />
+
+            <TextView
+                android:id="@+id/txIdade10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:text="ENDEREÇO ATUAL"
+                android:textColor="@color/Login_Primary_button"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnOpenEnderecoEdit"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/btnAddImagem"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="4dp"
+                android:drawableStart="@drawable/ic_edit_black_24dp"
+                android:elevation="@dimen/appbar_padding_top"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edtRuaView"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/field_rounded_white"
+                android:editable="false"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Rua"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="#040404"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbRua" />
+
+            <EditText
+                android:id="@+id/edtCidadeView"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/field_rounded_white"
+                android:editable="false"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Cidade"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="#040404"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbCidade" />
+
+            <EditText
+                android:id="@+id/edtBairroView"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/field_rounded_white"
+                android:editable="false"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Bairro"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="#040404"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbBairro" />
+
+            <EditText
+                android:id="@+id/edtReferenciaView"
+                android:layout_width="199dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/field_rounded_white"
+                android:editable="false"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Referência"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="#040404"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbNumero" />
+
+            <EditText
+                android:id="@+id/edtCepView"
+                android:layout_width="120dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/field_rounded_white"
+                android:editable="false"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="CEP"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="#040404"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbCep" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

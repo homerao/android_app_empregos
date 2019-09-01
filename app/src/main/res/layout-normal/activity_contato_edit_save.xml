@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_card"
+    tools:context=".partial.DadosPessoaisEditSaveActivity">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/app_bar_menu_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_rounded_login_red"
+        android:elevation="@dimen/text_field_elevation"
+        android:text="Salvar"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTelefoneFixo" />
+
+    <EditText
+        android:id="@+id/edtTelefoneFixo"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/field_rounded_white"
+        android:elevation="@dimen/text_field_elevation"
+        android:ems="10"
+        android:hint="Telefone Fixo"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtFalarcomSave" />
+
+    <EditText
+        android:id="@+id/txTituloEleView"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/field_rounded_white"
+        android:elevation="@dimen/text_field_elevation"
+        android:ems="10"
+        android:hint="Celular de Recado"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txCpfView" />
+
+    <EditText
+        android:id="@+id/edtFalarcomSave"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/field_rounded_white"
+        android:elevation="@dimen/text_field_elevation"
+        android:ems="10"
+        android:hint="Falar com "
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txTituloEleView" />
+
+    <EditText
+        android:id="@+id/txCpfView"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/field_rounded_white"
+        android:drawableBottom="@android:color/background_light"
+        android:elevation="@dimen/text_field_elevation"
+        android:ems="10"
+        android:hint="Celular"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txRGView" />
+
+    <EditText
+        android:id="@+id/txRGView"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+
+        android:layout_marginTop="15dp"
+        android:background="@drawable/field_rounded_white"
+        android:drawableBottom="#F9F6F6"
+        android:elevation="@dimen/text_field_elevation"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2" />
+
+</android.support.constraint.ConstraintLayout>

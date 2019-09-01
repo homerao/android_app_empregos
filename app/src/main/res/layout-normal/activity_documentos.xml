@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_card"
+    app:barrierDirection="left"
+    tools:context=".DadosPessoaisViewActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/app_bar_menu_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="1500dp">
+
+            <TextView
+                android:id="@+id/lbNascimento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:text="DATA EXPEDIÇÃO:"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbNome" />
+
+            <TextView
+                android:id="@+id/lbSexo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/lbNascimento"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:text="ORGÃO EXPEDIDOR:"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbNascimento" />
+
+            <TextView
+                android:id="@+id/lbNaturalidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:text="CPF:"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbSexo" />
+
+            <TextView
+                android:id="@+id/lbNascionalidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/lbNaturalidade"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:text="TITULO ELEITORAL:"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toBottomOf="@+id/txTituloEleView"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/lbNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:text="RG:"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+            <TextView
+                android:id="@+id/lbEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:text="SEÇÃO/ZONA:"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbNascionalidade" />
+
+            <TextView
+                android:id="@+id/lbCelular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:text="CARTEIRA MILITAR"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toBottomOf="@+id/txCartMilitarView"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/lbTelFixo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:text="CNH:"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbCelular" />
+
+            <TextView
+                android:id="@+id/lbRua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:text="CATEGORIA CNH:"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toBottomOf="@+id/edtRuaView"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/lbRua2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:text="PIS:"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toBottomOf="@+id/txPisView"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/lbRua3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:text="CARTEIRA PROFISSIONAL:"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toBottomOf="@+id/txCarteiraProfiView"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/lbRua4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:text="SÉRIE CARTEIRA PROFISSIONAL:"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toBottomOf="@+id/txSerieCartProfView"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/txIdade11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:text="DOCUMENTOS PESSOAIS"
+                android:textColor="@color/Login_Primary_button"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnOpenDocEdit"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/btnAddImagem"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="4dp"
+                android:drawableStart="@drawable/ic_edit_black_24dp"
+                android:elevation="@dimen/appbar_padding_top"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txIdade11" />
+
+            <TextView
+                android:id="@+id/txRGView"
+                android:layout_width="199dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/field_rounded_white"
+                android:ems="10"
+                android:enabled="false"
+                android:textAlignment="center"
+                android:textColor="#040404"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/lbNome"
+                app:layout_constraintStart_toEndOf="@+id/lbNome" />
+
+            <TextView
+                android:id="@+id/txRGDataExpView"
+                android:layout_width="116dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/field_rounded_white"
+                android:ems="10"
+                android:enabled="false"
+                android:textAlignment="center"
+                android:textColor="#040404"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/lbNascimento"
+                app:layout_constraintStart_toEndOf="@+id/lbNascimento" />
+
+            <TextView
+                android:id="@+id/txOrgExpedView"
+                android:layout_width="116dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/field_rounded_white"
+                android:ems="10"
+                android:enabled="false"
+                android:textAlignment="center"
+                android:textColor="#040404"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/lbSexo"
+                app:layout_constraintStart_toEndOf="@+id/lbSexo" />
+
+            <TextView
+                android:id="@+id/txCpfView"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/field_rounded_white"
+                android:ems="10"
+                android:enabled="false"
+                android:textAlignment="center"
+                android:textColor="#040404"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/lbNaturalidade"
+                app:layout_constraintStart_toEndOf="@+id/lbNaturalidade" />
+
+            <TextView
+                android:id="@+id/txTituloEleView"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/field_rounded_white"
+                android:ems="10"
+                android:enabled="false"
+                android:textAlignment="center"
+                android:textColor="#040404"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/lbNascionalidade"
+                app:layout_constraintTop_toBottomOf="@+id/txCpfView" />
+
+            <TextView
+                android:id="@+id/txZonaView"
+                android:layout_width="201dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/field_rounded_white"
+                android:ems="10"
+                android:enabled="false"
+                android:textAlignment="center"
+                android:textColor="#040404"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/lbEmail"
+                app:layout_constraintStart_toEndOf="@+id/lbEmail" />
+
+            <TextView
+                android:id="@+id/txCartMilitarView"
+                android:layout_width="180dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/field_rounded_white"
+                android:ems="10"
+                android:enabled="false"
+                android:textAlignment="center"
+                android:textColor="#040404"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/lbCelular"
+                app:layout_constraintTop_toBottomOf="@+id/txZonaView" />
+
+            <TextView
+                android:id="@+id/txCnHView"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/field_rounded_white"
+                android:ems="10"
+                android:enabled="false"
+                android:textAlignment="center"
+                android:textColor="#040404"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/lbTelFixo"
+                app:layout_constraintStart_toEndOf="@+id/lbTelFixo" />
+
+            <TextView
+                android:id="@+id/edtRuaView"
+                android:layout_width="208dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/field_rounded_white"
+                android:ems="10"
+                android:enabled="false"
+                android:textAlignment="center"
+                android:textColor="#040404"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/lbRua"
+                app:layout_constraintTop_toBottomOf="@+id/txCnHView" />
+
+            <TextView
+                android:id="@+id/txPisView"
+                android:layout_width="208dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/field_rounded_white"
+                android:ems="10"
+                android:enabled="false"
+                android:textAlignment="center"
+                android:textColor="#040404"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/lbRua2"
+                app:layout_constraintTop_toBottomOf="@+id/edtRuaView" />
+
+            <TextView
+                android:id="@+id/txCarteiraProfiView"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/field_rounded_white"
+                android:ems="10"
+                android:enabled="false"
+                android:textAlignment="center"
+                android:textColor="#040404"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/lbRua3"
+                app:layout_constraintTop_toBottomOf="@+id/txPisView" />
+
+            <TextView
+                android:id="@+id/txSerieCartProfView"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/field_rounded_white"
+                android:ems="10"
+                android:enabled="false"
+                android:textAlignment="center"
+                android:textColor="#040404"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/lbRua4"
+                app:layout_constraintTop_toBottomOf="@+id/txCarteiraProfiView" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

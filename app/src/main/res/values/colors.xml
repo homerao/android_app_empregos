@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FAFAFA</color>
+    <color name="colorPrimaryDark">#008ba3</color>
+    <color name="colorAccent">#D62F6C</color>
+    <color name="btnLoginColor">#E71B40</color>
+    <color name="blueSea" >#94D1F4</color>
+    <color name="promaryGreen">#009688</color>
+    <color name="gradientGreenPrimary">#2ebf91</color>
+    <color name="gradientPurpleEnd">#8360C3</color>
+    <color name="Login_Primary_button">#EF5350</color>
+    <color name="grey_primary">#FAFAFA</color>
+    <color name="primaryPallete_1" >#00bfa5</color>
+    <color name="primary_light_pallete_1" >#5df2d6</color>
+    <color name="primary_dark_pallete_1" >#008e76</color>
+
+
+</resources>

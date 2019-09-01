@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_card"
+    app:barrierDirection="left"
+    tools:context=".DadosPessoaisViewActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/app_bar_menu_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="56dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="800dp">
+
+            <TextView
+                android:id="@+id/lbEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="55dp"
+                android:text="E-MAIL:"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/lbCelular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="15dp"
+                android:text="CELULAR:"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbEmail" />
+
+            <TextView
+                android:id="@+id/lbCelular2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="12dp"
+                android:text="CELULAR RECADO:"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbCelular" />
+
+            <TextView
+                android:id="@+id/lbCelular3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="44dp"
+                android:text="FALAR COM:"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbCelular" />
+
+            <TextView
+                android:id="@+id/lbTelFixo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="26dp"
+                android:text="TELEFONE FIXO:"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbCelular3" />
+
+            <TextView
+                android:id="@+id/txIdade11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:text="INFORMAÇÕES DE CONTATO"
+                android:textColor="@color/Login_Primary_button"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnOpenEditContato"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/btnAddImagem"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="4dp"
+                android:drawableStart="@drawable/ic_edit_black_24dp"
+                android:elevation="@dimen/appbar_padding_top"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txZonaView"
+                android:layout_width="201dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/field_rounded_white"
+                android:ems="10"
+                android:textAlignment="center"
+                android:textColor="#040404"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/lbEmail"
+                app:layout_constraintStart_toEndOf="@+id/lbEmail" />
+
+            <TextView
+                android:id="@+id/txCartMilitarView"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/field_rounded_white"
+                android:ems="10"
+                android:enabled="false"
+                android:textAlignment="center"
+                android:textColor="#040404"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/lbCelular"
+                app:layout_constraintStart_toEndOf="@+id/lbCelular" />
+
+            <TextView
+                android:id="@+id/edtCelularRecado"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/field_rounded_white"
+                android:ems="10"
+                android:textAlignment="center"
+                android:textColor="#040404"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/lbCelular2"
+                app:layout_constraintStart_toEndOf="@+id/lbCelular2" />
+
+            <TextView
+                android:id="@+id/edtFalarCom"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/field_rounded_white"
+                android:ems="10"
+                android:enabled="false"
+                android:textAlignment="center"
+                android:textColor="#040404"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/lbCelular3"
+                app:layout_constraintStart_toEndOf="@+id/lbCelular3" />
+
+            <TextView
+                android:id="@+id/edtTelefoneFixo"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/field_rounded_white"
+                android:ems="10"
+                android:enabled="false"
+                android:textAlignment="center"
+                android:textColor="#040404"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/lbTelFixo"
+                app:layout_constraintStart_toEndOf="@+id/lbTelFixo" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
