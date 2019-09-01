@@ -21,7 +21,7 @@ import br.com.model.Cursos;
 
 
 public class AdapterCursos extends RecyclerView.Adapter<AdapterCursos.ViewHolder> {
-
+    //tag
     private static final String TAG = "ADAPTERCURSOS";
 
     private List<Cursos> lstCursos = new ArrayList<>();
