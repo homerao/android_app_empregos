@@ -1,20 +1,20 @@
 package br.com.firebase.recovery;
 
+import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toolbar;
 
 import br.com.empregos.R;
 import br.com.interfaces.SetupControlls;
 import br.com.interfaces.SetupToolbar;
 
-public class PasswordRecoveryActivity extends AppCompatActivity implements SetupControlls, SetupToolbar, View.OnClickListener {
+public class PasswordRecoveryActivity extends Activity implements SetupControlls, SetupToolbar, View.OnClickListener {
     private EditText txmailRecovery;
     private Button btnRecovery;
 
@@ -36,8 +36,8 @@ public class PasswordRecoveryActivity extends AppCompatActivity implements Setup
     @Override
     public void setUpToolbar() {
         Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        setActionBar(toolbar);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
@@ -86,7 +86,7 @@ public class PasswordRecoveryActivity extends AppCompatActivity implements Setup
     private void setupToolbar(){
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("Recuperar Senha");
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        setActionBar(toolbar);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

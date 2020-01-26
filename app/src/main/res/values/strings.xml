@@ -65,6 +65,7 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="txRecovery_description">Insira o E-mail cadastrado</string>
+    <string name="title_activity_menu_usuario2">Menu Usuario</string>
 
 
 </resources>

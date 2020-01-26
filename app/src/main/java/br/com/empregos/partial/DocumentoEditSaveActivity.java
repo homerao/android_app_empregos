@@ -1,17 +1,17 @@
 package br.com.empregos.partial;
 
+import android.app.Activity;
 import android.content.Intent;
-import android.os.Handler;
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import android.os.Handler;
+
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -24,6 +24,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.text.ParseException;
 import java.util.Date;
 
+import androidx.appcompat.app.AppCompatActivity;
 import br.com.empregos.DocumentoViewActivity;
 import br.com.empregos.R;
 import br.com.empregos.dao.DocumentoDAO;
@@ -32,7 +33,7 @@ import br.com.model.Documento;
 import br.com.util.DateConverterUtil;
 import br.com.util.MaskEditUtil;
 
-public class DocumentoEditSaveActivity extends AppCompatActivity implements View.OnClickListener, BackPressed {
+public class DocumentoEditSaveActivity extends Activity implements View.OnClickListener, BackPressed {
 
 
     private static final String TAG = "DocumentoEditsave";
@@ -114,8 +115,8 @@ public class DocumentoEditSaveActivity extends AppCompatActivity implements View
     private void setupToolBar(){
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("Inserir Documentos");
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        setActionBar(toolbar);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     public void setup(){

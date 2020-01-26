@@ -1,25 +1,26 @@
 package br.com.firebase.login;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.constraint.ConstraintLayout;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import br.com.databasehelper.ConexaoFirebaseHelper;
 import br.com.empregos.MenuUsuarioActivity;
 import br.com.empregos.R;
@@ -28,7 +29,7 @@ import br.com.interfaces.BackPressed;
 import br.com.loader.LoaderActivity;
 
 
-public class FirebaseLoginEmailPasswordActivity extends AppCompatActivity implements BackPressed, View.OnClickListener{
+public class FirebaseLoginEmailPasswordActivity extends Activity implements BackPressed, View.OnClickListener{
 
     private FirebaseAuth mAuth;
     private FirebaseUser user;
@@ -171,8 +172,8 @@ public class FirebaseLoginEmailPasswordActivity extends AppCompatActivity implem
     private void setupToolbar(){
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("Log-in");
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        setActionBar(toolbar);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
 

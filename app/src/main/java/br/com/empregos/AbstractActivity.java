@@ -1,22 +1,23 @@
 package br.com.empregos;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+
 import android.view.View;
+import android.widget.Toolbar;
 
 import com.google.firebase.database.DatabaseReference;
 
 import java.util.List;
 
+import androidx.annotation.Nullable;
 import br.com.databasehelper.ConexaoFirebaseHelper;
 import br.com.model.AbstractEntity;
 import br.com.util.DownloadHelper;
 import br.com.util.UploadHelper;
 
-public abstract class AbstractActivity extends AppCompatActivity {
+public abstract class AbstractActivity extends Activity {
 
     protected List<View> lstComponents;
     protected AbstractEntity entity;
@@ -47,8 +48,8 @@ public abstract class AbstractActivity extends AppCompatActivity {
     protected void setupToolbar(String titulo){
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle(titulo);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        setActionBar(toolbar);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
     protected  void setupControls(){
 

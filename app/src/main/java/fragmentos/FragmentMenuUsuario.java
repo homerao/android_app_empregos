@@ -3,21 +3,16 @@ package fragmentos;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.GridView;
-import android.widget.ListView;
+
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-import br.com.adapters.GridPerfilAdapter;
+import androidx.cardview.widget.CardView;
+import androidx.fragment.app.Fragment;
 import br.com.empregos.ContatoViewActivity;
 import br.com.empregos.CurriculoViewActivity;
 import br.com.empregos.CursoViewActivity;
@@ -27,8 +22,7 @@ import br.com.empregos.EnderecoViewActivity;
 import br.com.empregos.ExperienciaProfissionalViewActivity;
 import br.com.empregos.FormacaoViewActivity;
 import br.com.empregos.R;
-import br.com.empregos.partial.DocumentoEditSaveActivity;
-import br.com.util.MenuResourceUtil;
+
 
 /**
  * A simple {@link Fragment} subclass.

@@ -1,9 +1,10 @@
 package br.com.empregos.partial;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import android.widget.Toolbar;
 
+
+import androidx.appcompat.app.AppCompatActivity;
 import br.com.empregos.R;
 
 public class FormacaoEditSaveActivity extends AppCompatActivity {
@@ -26,8 +27,8 @@ public class FormacaoEditSaveActivity extends AppCompatActivity {
     private void setupToolBar(){
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("Cadastro de Formação");
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        setActionBar(toolbar);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
 }

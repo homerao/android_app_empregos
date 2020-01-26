@@ -1,7 +1,7 @@
 package br.com.loader;
 
+import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -17,7 +17,7 @@ import br.com.empregos.MainActivity;
 import br.com.empregos.R;
 import br.com.firebase.login.FirebaseLoginEmailPasswordActivity;
 
-public class LoaderActivity extends AppCompatActivity {
+public class LoaderActivity extends Activity {
 
     ProgressBar progressBar;
     private FirebaseAuth mAuth;

@@ -1,7 +1,6 @@
 package br.com.util;
 
 import android.graphics.Bitmap;
-import android.support.annotation.NonNull;
 import android.util.Log;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -13,6 +12,8 @@ import com.google.firebase.storage.StorageReference;
 
 import java.io.File;
 import java.io.IOException;
+
+import androidx.annotation.NonNull;
 
 public class DownloadHelper {
 

@@ -1,9 +1,8 @@
 package br.com.empregos;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,7 +13,6 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.facebook.AccessToken;
-import com.facebook.AccessTokenTracker;
 import com.facebook.CallbackManager;
 import com.facebook.GraphRequest;
 import com.facebook.GraphResponse;
@@ -27,12 +25,13 @@ import com.google.firebase.auth.FirebaseUser;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import androidx.annotation.Nullable;
 import br.com.databasehelper.ConexaoFirebaseHelper;
 import br.com.firebase.login.FirebaseLoginEmailPasswordActivity;
 import br.com.firebase.register.FirebaseRegisterEmailPasswordActivity;
 
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends Activity implements View.OnClickListener{
 
     private EditText txEmail;
     private EditText txSenha;
@@ -75,6 +74,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
         btnLogin.setOnClickListener(this);
+        btnRegistro.setOnClickListener(this);
 
 
 

@@ -1,6 +1,5 @@
 package br.com.empregos.dao;
 
-import android.support.annotation.NonNull;
 import android.util.Log;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -15,6 +14,7 @@ import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 
+import androidx.annotation.NonNull;
 import br.com.empregos.exception.RegistroInexistenteException;
 import br.com.model.Candidato;
 

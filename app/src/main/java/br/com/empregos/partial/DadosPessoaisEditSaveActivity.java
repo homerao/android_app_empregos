@@ -4,14 +4,10 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+
 import android.util.Log;
 import android.view.View;
 import android.webkit.MimeTypeMap;
@@ -20,21 +16,16 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.DataSource;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.bumptech.glide.load.engine.GlideException;
-import com.bumptech.glide.request.RequestListener;
-import com.bumptech.glide.request.target.Target;
+
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.UploadTask;
 
 import java.io.InputStream;
 import java.text.ParseException;
@@ -42,16 +33,16 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import br.com.empregos.AbstractActivity;
 import br.com.empregos.DadosPessoaisViewActivity;
 import br.com.empregos.R;
 import br.com.empregos.dao.CandidatoDAO;
-import br.com.empregos.enumarators.TYPE_CONTENT;
 import br.com.interfaces.SetupControlls;
 import br.com.model.Candidato;
 import br.com.model.InformaCoesPessoais;
 import br.com.util.DateConverterUtil;
-import br.com.util.DownloadHelper;
 import br.com.util.UploadHelper;
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -344,8 +335,8 @@ public class DadosPessoaisEditSaveActivity extends AbstractActivity implements V
     private void setupToolbar(){
         Toolbar tollbar = findViewById(R.id.toolbar);
         tollbar.setTitle("Edição de dados");
-        setSupportActionBar(tollbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        setActionBar(tollbar);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }
 

@@ -13,16 +13,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".partial.DadosPessoaisEditSaveActivity" android:theme="@style/AppTheme.NoActionBar" android:parentActivityName=".DadosPessoaisViewActivity"></activity>
-        <activity android:name=".partial.FormacaoEditSaveActivity" android:theme="@style/AppTheme.NoActionBar" android:parentActivityName=".MenuUsuarioActivity"/>
-        <activity android:name=".partial.EnderecoEditSaveActivity" android:theme="@style/AppTheme.NoActionBar" android:parentActivityName=".MenuUsuarioActivity" />
-        <activity android:name=".DadosPessoaisViewActivity" android:theme="@style/AppTheme.NoActionBar" android:parentActivityName=".MenuUsuarioActivity"/>
+        <activity
+            android:name=".partial.DadosPessoaisEditSaveActivity"
+            android:parentActivityName=".DadosPessoaisViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".partial.FormacaoEditSaveActivity"
+            android:parentActivityName=".MenuUsuarioActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".partial.EnderecoEditSaveActivity"
+            android:parentActivityName=".MenuUsuarioActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DadosPessoaisViewActivity"
+            android:parentActivityName=".MenuUsuarioActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MenuUsuarioActivity"
             android:label="@string/title_activity_menu_usuario"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="br.com.loader.LoaderActivity" />
-        <activity android:name="br.com.firebase.recovery.PasswordRecoveryActivity" android:theme="@style/AppTheme.NoActionBar" android:parentActivityName="br.com.firebase.login.FirebaseLoginEmailPasswordActivity" />
+        <activity
+            android:name="br.com.firebase.recovery.PasswordRecoveryActivity"
+            android:parentActivityName="br.com.firebase.login.FirebaseLoginEmailPasswordActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
@@ -31,19 +46,47 @@
             android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:theme="@android:style/Theme.Translucent" />
-        <activity android:name=".partial.DocumentoEditSaveActivity" android:parentActivityName=".DocumentoViewActivity" />
-        <activity android:name="br.com.firebase.login.FirebaseLoginEmailPasswordActivity" android:parentActivityName=".MainActivity"/>
-        <activity android:name="br.com.firebase.register.FirebaseRegisterEmailPasswordActivity"  android:parentActivityName=".MainActivity"/>
-        <activity android:name=".DocumentoViewActivity" android:theme="@style/AppTheme.NoActionBar"  android:parentActivityName=".MenuUsuarioActivity"/>
-        <activity android:name=".FormacaoViewActivity" android:theme="@style/AppTheme.NoActionBar" android:parentActivityName=".MenuUsuarioActivity"/>
-        <activity android:name=".EnderecoViewActivity" android:theme="@style/AppTheme.NoActionBar" android:parentActivityName=".MenuUsuarioActivity"/>
-        <activity android:name=".CursoViewActivity" android:theme="@style/AppTheme.NoActionBar" android:parentActivityName=".MenuUsuarioActivity"/>
-        <activity android:name=".CurriculoViewActivity" android:theme="@style/AppTheme.NoActionBar" android:parentActivityName=".MenuUsuarioActivity"/>
-        <activity android:name=".ContatoViewActivity" android:theme="@style/AppTheme.NoActionBar" android:parentActivityName=".MenuUsuarioActivity"/>
-        <activity android:name=".ExperienciaProfissionalViewActivity" android:theme="@style/AppTheme.NoActionBar" android:parentActivityName=".MenuUsuarioActivity"/>
-        <activity android:name=".partial.ContatoEditSaveActivity" android:theme="@style/AppTheme.NoActionBar" android:parentActivityName=".ContatoViewActivity"/>
-
-
+        <activity
+            android:name=".partial.DocumentoEditSaveActivity"
+            android:parentActivityName=".DocumentoViewActivity" />
+        <activity
+            android:name="br.com.firebase.login.FirebaseLoginEmailPasswordActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name="br.com.firebase.register.FirebaseRegisterEmailPasswordActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DocumentoViewActivity"
+            android:parentActivityName=".MenuUsuarioActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FormacaoViewActivity"
+            android:parentActivityName=".MenuUsuarioActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EnderecoViewActivity"
+            android:parentActivityName=".MenuUsuarioActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CursoViewActivity"
+            android:parentActivityName=".MenuUsuarioActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CurriculoViewActivity"
+            android:parentActivityName=".MenuUsuarioActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ContatoViewActivity"
+            android:parentActivityName=".MenuUsuarioActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ExperienciaProfissionalViewActivity"
+            android:parentActivityName=".MenuUsuarioActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".partial.ContatoEditSaveActivity"
+            android:parentActivityName=".ContatoViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

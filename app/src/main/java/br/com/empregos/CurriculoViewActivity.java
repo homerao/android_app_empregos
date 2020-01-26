@@ -1,14 +1,15 @@
 package br.com.empregos;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toolbar;
 
-public class CurriculoViewActivity extends AppCompatActivity {
+import androidx.annotation.Nullable;
+
+public class CurriculoViewActivity extends Activity {
 
 
     @Override
@@ -36,8 +37,8 @@ public class CurriculoViewActivity extends AppCompatActivity {
     private void setupToolBar(){
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("Currículo");
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        setActionBar(toolbar);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
 

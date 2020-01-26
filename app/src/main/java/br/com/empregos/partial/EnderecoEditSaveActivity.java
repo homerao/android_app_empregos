@@ -1,20 +1,21 @@
 package br.com.empregos.partial;
 
 import android.content.Intent;
-import android.os.Handler;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import android.os.Handler;
+
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import br.com.empregos.R;
 import br.com.empregos.dao.EnderecoDAO;
 import br.com.model.Endereco;
@@ -59,8 +60,8 @@ public class EnderecoEditSaveActivity extends AppCompatActivity implements View.
 
     private void setupToolBar(){
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        setActionBar(toolbar);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
     private void setup(){
         edtCidade = findViewById(R.id.edtCidadeSave);

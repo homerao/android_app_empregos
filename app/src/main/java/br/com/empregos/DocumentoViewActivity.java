@@ -1,12 +1,10 @@
 package br.com.empregos;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -14,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -23,13 +22,15 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import br.com.empregos.dao.DocumentoDAO;
 import br.com.empregos.exception.RegistroInexistenteException;
 import br.com.empregos.partial.DocumentoEditSaveActivity;
 import br.com.model.Documento;
 import br.com.util.DateConverterUtil;
 
-public class DocumentoViewActivity extends AppCompatActivity implements View.OnClickListener{
+public class DocumentoViewActivity extends Activity implements View.OnClickListener{
 
     private TextView txRG;
     private TextView txDataExpRG;
@@ -79,8 +80,8 @@ public class DocumentoViewActivity extends AppCompatActivity implements View.OnC
     private void setupToolBar(){
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("Documentos");
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        setActionBar(toolbar);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     private void setup(){

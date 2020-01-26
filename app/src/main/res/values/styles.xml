@@ -11,9 +11,9 @@
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <item name="actionMenuTextColor" >@color/colorPrimary</item>
+        <item name="actionMenuTextColor">@color/colorPrimary</item>
 
-     </style>
+    </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" />
 

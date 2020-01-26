@@ -1,14 +1,15 @@
 package br.com.empregos;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toolbar;
 
-public class ExperienciaProfissionalViewActivity extends AppCompatActivity {
+import androidx.annotation.Nullable;
+
+public class ExperienciaProfissionalViewActivity extends Activity {
 
 
     @Override
@@ -36,8 +37,8 @@ public class ExperienciaProfissionalViewActivity extends AppCompatActivity {
     private void setupToolBar(){
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("Experiência Profissional");
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        setActionBar(toolbar);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     // criação de menu de opção
