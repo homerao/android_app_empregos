@@ -13,29 +13,6 @@
         android:layout_width="match_parent"
         android:layout_height="58dp" />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardFoto"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="62dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/imgPerfil"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:layout_gravity="center"
-            android:layout_margin="2dp"
-            android:layout_toEndOf="@+id/cardFoto"
-            android:elevation="@dimen/appbar_padding_top"
-            android:padding="10dp"
-            android:src="@drawable/ic_menu_camera"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.cardview.widget.CardView>
-
     <Button
         android:id="@+id/btnSalvar"
         android:layout_width="0dp"

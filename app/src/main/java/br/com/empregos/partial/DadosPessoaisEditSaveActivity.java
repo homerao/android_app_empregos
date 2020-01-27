@@ -143,7 +143,6 @@ public class DadosPessoaisEditSaveActivity extends AbstractActivity implements V
         mEdtNacionalidade = findViewById(R.id.txTituloEleView);
         mEdtEstadoCivil = findViewById(R.id.edtTelefoneFixo);
         mEdtDataNascimento = findViewById(R.id.edtNascto);
-        imProfile = findViewById(R.id.imgPerfil);
         spnAdapter = new ArrayAdapter<>(this,R.layout.support_simple_spinner_dropdown_item, lstSexo);
         mSpnSexo.setAdapter(spnAdapter);
         btnSalvar = findViewById(R.id.btnSalvar);
@@ -151,7 +150,7 @@ public class DadosPessoaisEditSaveActivity extends AbstractActivity implements V
 
         btnSalvar.setOnClickListener(this);
 
-        imProfile.setOnClickListener(this);
+
 
         fillUserData();
     }
@@ -238,9 +237,6 @@ public class DadosPessoaisEditSaveActivity extends AbstractActivity implements V
 
         candidato.setInformacoes(info);
 
-        deleteOldPicture(candidato.getProfilePicture());
-        candidato.setProfilePicture(candidato.getIdCandidato()+"_"+System.currentTimeMillis());
-        uploadFile(candidato.getProfilePicture());
         dao.saveOrUpdate(candidato, candidato.getIdCandidato());
 
         Toast.makeText(this, "Dados salvos" , Toast.LENGTH_SHORT).show();
