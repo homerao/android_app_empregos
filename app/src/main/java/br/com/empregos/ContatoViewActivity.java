@@ -70,7 +70,7 @@ public class ContatoViewActivity extends AppCompatActivity implements View.OnCli
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("Dados de contato");
         setActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     private void setup(){

@@ -12,7 +12,20 @@
         android:id="@+id/include"
         layout="@layout/app_bar_menu_usuario"
         android:layout_width="match_parent"
-        android:layout_height="56dp" />
+        android:layout_height="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -118,68 +131,85 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
+            <EditText
                 android:id="@+id/txZonaView"
                 android:layout_width="201dp"
                 android:layout_height="20dp"
                 android:layout_marginStart="4dp"
                 android:background="@drawable/field_rounded_white"
+                android:editable="false"
                 android:ems="10"
+                android:enabled="false"
+                android:hint="E-mail"
+                android:inputType="textPersonName"
                 android:textAlignment="center"
                 android:textColor="#040404"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="@+id/lbEmail"
                 app:layout_constraintStart_toEndOf="@+id/lbEmail" />
 
-            <TextView
+            <EditText
                 android:id="@+id/txCartMilitarView"
                 android:layout_width="150dp"
                 android:layout_height="20dp"
                 android:layout_marginStart="12dp"
                 android:background="@drawable/field_rounded_white"
+                android:editable="false"
                 android:ems="10"
                 android:enabled="false"
+                android:hint="Celular"
+                android:inputType="textPersonName"
                 android:textAlignment="center"
                 android:textColor="#040404"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="@+id/lbCelular"
                 app:layout_constraintStart_toEndOf="@+id/lbCelular" />
 
-            <TextView
+            <EditText
                 android:id="@+id/edtCelularRecado"
                 android:layout_width="150dp"
                 android:layout_height="20dp"
                 android:layout_marginStart="12dp"
                 android:background="@drawable/field_rounded_white"
+                android:editable="false"
                 android:ems="10"
+                android:enabled="false"
+                android:hint="Celular"
+                android:inputType="textPersonName"
                 android:textAlignment="center"
                 android:textColor="#040404"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="@+id/lbCelular2"
                 app:layout_constraintStart_toEndOf="@+id/lbCelular2" />
 
-            <TextView
+            <EditText
                 android:id="@+id/edtFalarCom"
                 android:layout_width="150dp"
                 android:layout_height="20dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/field_rounded_white"
+                android:editable="false"
                 android:ems="10"
                 android:enabled="false"
+                android:hint="Nome"
+                android:inputType="textPersonName"
                 android:textAlignment="center"
                 android:textColor="#040404"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="@+id/lbCelular3"
                 app:layout_constraintStart_toEndOf="@+id/lbCelular3" />
 
-            <TextView
+            <EditText
                 android:id="@+id/edtTelefoneFixo"
                 android:layout_width="150dp"
                 android:layout_height="20dp"
                 android:layout_marginStart="12dp"
                 android:background="@drawable/field_rounded_white"
+                android:editable="false"
                 android:ems="10"
                 android:enabled="false"
+                android:hint="Telefone fixo"
+                android:inputType="textPersonName"
                 android:textAlignment="center"
                 android:textColor="#040404"
                 android:textSize="12sp"
