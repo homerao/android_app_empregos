@@ -11,6 +11,7 @@ import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 
 import androidx.fragment.app.Fragment;
+
 import br.com.empregos.R;
 
 /**

@@ -1,6 +1,7 @@
 package fragmentos;
 
 
+import android.content.ComponentCallbacks2;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -27,7 +28,8 @@ import br.com.empregos.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class FragmentMenuUsuario extends Fragment implements View.OnClickListener {
+public class FragmentMenuUsuario extends Fragment implements View.OnClickListener, ComponentCallbacks2, View.OnCreateContextMenuListener {
+
 
 
 
@@ -120,5 +122,8 @@ public class FragmentMenuUsuario extends Fragment implements View.OnClickListene
     }
 
 
+    @Override
+    public void onTrimMemory(int level) {
 
+    }
 }

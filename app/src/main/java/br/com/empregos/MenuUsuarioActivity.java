@@ -31,9 +31,9 @@ public class MenuUsuarioActivity extends AppCompatActivity
         setContentView(R.layout.activity_menu_usuario);
         mAuth = ConexaoFirebaseHelper.getFirebaseAuth();
         user = mAuth.getCurrentUser();
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+/*        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setActionBar(toolbar);
-        getActionBar().setDisplayHomeAsUpEnabled(true);
+        getActionBar().setDisplayHomeAsUpEnabled(true);*/
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -97,7 +97,7 @@ public class MenuUsuarioActivity extends AppCompatActivity
 
         if (id == R.id.meu_perfil) {
             // Handle the camera action
-            getSupportFragmentManager().beginTransaction().replace(R.id.main, new FragmentMenuUsuario()).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.main, new FragmentMenuUsuario()).addToBackStack(null).commit();
         } else if (id == R.id.nav_gallery) {
             getSupportFragmentManager().beginTransaction().replace(R.id.main, new FragmentVagas()).commit();
         } else if (id == R.id.nav_slideshow) {

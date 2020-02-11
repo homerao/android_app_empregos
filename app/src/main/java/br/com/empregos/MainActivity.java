@@ -98,7 +98,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
 
     public void carregarMenu(){
 
-        Intent it = new Intent(getApplicationContext(),MenuUsuarioActivity.class);
+        Intent it = new Intent(getApplicationContext(),MenuUsuario2.class);
         finish();
         startActivity(it);
 
