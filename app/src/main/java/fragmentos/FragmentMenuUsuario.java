@@ -22,7 +22,6 @@ import br.com.empregos.DocumentoViewActivity;
 import br.com.empregos.EnderecoViewActivity;
 import br.com.empregos.ExperienciaProfissionalViewActivity;
 import br.com.empregos.FormacaoViewActivity;
-import br.com.empregos.R;
 
 
 /**

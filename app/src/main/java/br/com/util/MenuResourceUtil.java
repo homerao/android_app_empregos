@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import br.com.empregos.R;
+
+
 import br.com.model.Cursos;
 
 public class MenuResourceUtil {
